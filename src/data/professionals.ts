@@ -1,0 +1,523 @@
+export interface Professional {
+  slug: string;
+  name: string;
+  name_en: string;
+  category: "Partner" | "Associate" | "Paralegal";
+  title: string;
+  title_en: string;
+  office: string;
+  email: string;
+  phone?: string;
+  practices?: string[];
+  practices_en?: string[];
+  bio: string;
+  bio_en: string;
+  education: string[];
+  education_en: string[];
+  admissions: string[];
+  admissions_en: string[];
+  image: string;
+  pdfUrl?: string;
+
+}
+
+export const professionals: Professional[] = [
+  {
+    slug: "cao-minh-truc",
+    name: "Cao Minh Trúc",
+    name_en: "Truc Minh Cao",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "truccm@xyz.com.vn",
+    pdfUrl: "/documents/people/bdlaw-cao-minh-truc.pdf",
+    practices: ["Lao động và Việc làm", "Tuân thủ Doanh nghiệp"],
+    practices_en: ["Labor & Employment", "Corporate Compliance"],
+    bio: "Luật sư Cao Minh Trúc chuyên về lĩnh vực Lao động và Tuân thủ Doanh nghiệp với 6 năm kinh nghiệm.\n\nBà tư vấn cho các doanh nghiệp FDI về quy chế nhân sự và giải quyết tranh chấp lao động.",
+    bio_en: "Mrs. Truc Minh Cao specializes in Labor & Employment and Corporate Compliance with 6 years of experience.\n\nShe advises FDI enterprises on HR policies and labor dispute resolution.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội"],
+    education_en: ["LL.B, Hanoi Law University"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "/images/avt-cao-minh-truc.jpg",
+  },
+  {
+    slug: "nguyen-trung-kien",
+    name: "Nguyễn Trung Kiên",
+    name_en: "Kien Trung Nguyen",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "kiennt@xyz.com.vn",
+    pdfUrl: "/documents/people/bdlaw-nguyen-trung-kien.pdf",
+    practices: ["Labor & Employment", "Corporate Compliance"],
+    bio: "Luật sư Nguyễn Trung Kiên chuyên về lĩnh vực Lao động và Tuân thủ Doanh nghiệp với 6 năm kinh nghiệm.\n\nAnh tư vấn cho các doanh nghiệp FDI về quy chế nhân sự và giải quyết tranh chấp lao động.",
+    bio_en: "Mr. Kien Trung Nguyen specializes in Labor & Employment and Corporate Compliance with 6 years of experience.\n\nHe advises FDI enterprises on HR policies and labor dispute resolution.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội"],
+    education_en: ["LL.B, Hanoi Law University"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "/images/avt-nguyen-trung-kien.jpg",
+  },
+  {
+    slug: "tran-trong-binh",
+    name: "Trần Trọng Bình",
+    name_en: "Binh Trong Tran",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "binhtt@xyz.com.vn",
+    phone: "+84 99 9999 9999",
+    pdfUrl: "/documents/people/bdlaw-tran-trong-binh.pdf",
+    practices: ["International Arbitration", "Real Estate & Construction"],
+    bio: "Luật sư Trần Trọng Bình có hơn 15 năm kinh nghiệm chuyên sâu trong lĩnh vực Trọng tài quốc tế và Pháp lý Xây dựng. Ông thường xuyên đại diện cho các nhà thầu quốc tế và chủ đầu tư trong các tranh chấp phức tạp liên quan đến hợp đồng FIDIC tại VIAC và SIAC.\n\nTư duy sắc bén và am hiểu thương mại giúp ông luôn bảo vệ tối đa quyền lợi của thân chủ.",
+    bio_en: "Mr. Binh Trong Tran brings over 15 years of extensive experience in International Arbitration and Construction Law. He frequently represents international contractors and developers in complex disputes arising from FIDIC contracts before VIAC and SIAC.\n\nHis sharp analytical skills and commercial acumen ensure the utmost protection of his clients' interests.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội", "Thạc sĩ Luật Quốc tế, NUS Singapore"],
+    education_en: ["LL.B, Hanoi Law University", "LL.M International Law, NUS Singapore"],
+    admissions: ["Đoàn Luật sư TP. Hà Nội", "Trọng tài viên VIAC"],
+    admissions_en: ["Hanoi Bar Association", "Arbitrator, VIAC"],
+    image: "/images/avt-tran-trong-binh.jpg",
+  },
+  {
+    slug: "nguyen-thanh-ha",
+    name: "Nguyễn Thanh Hà",
+    name_en: "Ha Thanh Nguyen",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "hant@xyz.com.vn",
+    phone: "+84 88 8888 8888",
+    pdfUrl: "/documents/people/bdlaw-nguyen-thanh-ha.pdf",
+    practices: ["M&A & Corporate", "Banking & Finance"],
+    bio: "Luật sư Nguyễn Thanh Hà là chuyên gia hàng đầu trong lĩnh vực M&A và Tài chính Ngân hàng tại Việt Nam với hơn 18 năm kinh nghiệm.\n\nÔng đã tư vấn cho nhiều giao dịch M&A xuyên biên giới có giá trị lớn và được các tổ chức xếp hạng quốc tế vinh danh.",
+    bio_en: "Mr. Ha Thanh Nguyen is a leading expert in M&A and Banking & Finance in Vietnam with over 18 years of experience.\n\nHe has advised on numerous high-value cross-border M&A transactions and has been recognized by international ranking organizations.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội", "Thạc sĩ Luật Thương mại, University of London"],
+    education_en: ["LL.B, Hanoi Law University", "LL.M Commercial Law, University of London"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "/images/avt-nguyen-thanh-ha.jpg",
+  },
+  {
+    slug: "tran-thanh-nga",
+    name: "Trần Thanh Nga",
+    name_en: "Nga Thanh Tran",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "ngatt@xyz.com.vn",
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-tran-thanh-nga.pdf",
+    practices: ["Labor & Employment", "Corporate Compliance"],
+    bio: "Luật sư Trần Thanh Nga chuyên về lĩnh vực Lao động và Tuân thủ Doanh nghiệp với 6 năm kinh nghiệm.\n\nBà tư vấn cho các doanh nghiệp FDI về quy chế nhân sự và giải quyết tranh chấp lao động.",
+    bio_en: "Mrs. Nga Thanh Tran specializes in Labor & Employment and Corporate Compliance with 6 years of experience.\n\nShe advises FDI enterprises on HR policies and labor dispute resolution.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội"],
+    education_en: ["LL.B, Hanoi Law University"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "images/avt-tran-thanh-nga.jpg",
+  },
+  {
+    slug: "dang-thu-ha",
+    name: "Đặng Thu Hà",
+    name_en: "Ha Thu Dang",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "hadt@xyz.com.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-dang-thu-ha.pdf",
+    practices: ["Corporate Compliance", "Risk Management"],
+    bio: "Bà Đặng Thu Hà tư vấn chuyên sâu về quản trị rủi ro và tuân thủ doanh nghiệp.",
+    bio_en: "Ms. Ha Thu Dang provides in-depth advice on risk management and corporate compliance.",
+    education: ["Cử nhân Luật"],
+    education_en: ["LL.B"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "images/avt-dang-thu-ha.jpg",
+  },
+  {
+    slug: "song-jung-sook",
+    name: "Song Jung Sook",
+    name_en: "Song Jung Sook",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Seoul",
+    email: "songjs@xyz.com.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-song-jung-sook.pdf",
+    practices: ["Corporate Compliance", "Risk Management"],
+    bio: "Bà Song Jung Sook tư vấn chuyên sâu về quản trị rủi ro và tuân thủ doanh nghiệp.",
+    bio_en: "Mrs. Song Jung Sook provides in-depth advice on risk management and corporate compliance.",
+    education: ["Cử nhân Luật, Đại học Seoul"],
+    education_en: ["LL.B, Seoul University"],
+    admissions: ["Đoàn Luật sư Seoul"],
+    admissions_en: ["Seoul Bar Association"],
+    image: "images/avt-song-jung-sook.jpg",
+  },
+  {
+    slug: "duong-huong-que",
+    name: "Dương Hương Quế",
+    name_en: "Que Huong Duong",
+    category: "Partner",
+    title: "Luật sư Thành viên",
+    title_en: "Partner",
+    office: "Hanoi",
+    email: "quedh@xyz.com.vn",
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-duong-huong-que.pdf",
+    practices: ["Intellectual Property", "Licensing"],
+    bio: "Luật sư Dương Hương Quế chuyên sâu về Sở hữu trí tuệ và tư vấn các thủ tục cấp phép kinh doanh tại Việt Nam.",
+    bio_en: "Mrs. Que Huong Duong specializes in Intellectual Property and business licensing procedures in Vietnam.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội"],
+    education_en: ["LL.B, Hanoi Law University"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "images/avt-duong-huong-que.jpg",
+  },
+
+  // --- PHÒNG TƯ VẤN HỢP ĐỒNG ---
+  {
+    slug: "hoang-anh-dung",
+    name: "Hoàng Anh Dũng",
+    name_en: "Dung Anh Hoang",
+    category: "Associate",
+    title: "Luật sư Cộng sự",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "dungha@xyz.com.vn",
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-hoang-anh-dung.pdf",
+    practices: ["Commercial Contracts", "Civil Law"],
+    bio: "Ông Hoàng Anh Dũng chuyên trách rà soát và soạn thảo các loại hợp đồng thương mại quốc tế và dân sự.",
+    bio_en: "Mr. Dung Anh Hoang is responsible for reviewing and drafting international commercial and civil contracts.",
+    education: ["Cử nhân Luật"],
+    education_en: ["LL.B"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "images/avt-hoang-anh-dung.jpg",
+  },
+
+  // --- PHÒNG TRANH TỤNG ---
+  {
+    slug: "nguyen-thi-lan-anh",
+    name: "Nguyễn Thịhị Lan Anh",
+    name_en: "Anh Lan Thi Nguyen",
+    category: "Associate",
+    title: "Luật sư Cộng sự",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "anhntl@bdlaw.vn",
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-nguyen-thi-lan-anh.pdf",
+    practices: ["Dispute Resolution", "Civil Litigation"],
+    bio: "Bà Lan Anh đại diện cho khách hàng trong các vụ việc tranh tụng dân sự và thương mại tại Tòa án.",
+    bio_en: "Mrs. Lan Anh represents clients in civil and commercial litigation cases at Court.",
+    education: ["Cử nhân Luật, Đại học Quốc gia Hà Nội"],
+    education_en: ["LL.B, National University in Hanoi"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "images/avt-nguyen-thi-lan-anh.jpg",
+  },
+
+  // --- PHÒNG DỊCH VỤ TƯ VẤN ---
+  {
+    slug: "do-thi-yen-nga",
+    name: "Đỗ Thị Yến Nga",
+    name_en: "Nga Yen Thi  Do",
+    category: "Associate",
+    title: "Cộng sự Tư vấn",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "ngady@xyz.com.vn",
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-do-thi-yen-nga.pdf",
+    practices: ["Administrative Procedures", "Investment Registration"],
+    bio: "Bà Yến Nga chuyên hỗ trợ các nhà đầu tư thực hiện các thủ tục hành chính và đăng ký đầu tư.",
+    bio_en: "Mrs. Nga specializes in supporting investors in administrative procedures and investment registration.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: ["Đoàn Luật sư Hà Nội"],
+    admissions_en: ["Hanoi Bar Association"],
+    image: "images/avt-do-thi-yen-nga.jpg",
+  },
+  {
+    slug: "ngo-thi-hong",
+    name: "Ngô Thị Hồng",
+    name_en: "Hong Thi Ngo",
+    category: "Associate",
+    title: "Chuyên gia Tư vấn Thuế",
+    title_en: "Tax Expert",
+    office: "Hanoi",
+    email: "hongnt@bdlaw.vn", // 
+    phone: "+84 24 39365956", //  // 
+    pdfUrl: "/documents/people/bdlaw-ngo-thi-hong.pdf",
+    practices: ["Contract Law", "Legal Research"],
+    bio: "Bà Hồng chuyên trách nghiên cứu pháp lý và hỗ trợ rà soát hợp đồng.",
+    bio_en: "Ms. Hong specializes in legal research and contract review support.",
+    education: ["Cử nhân Luật"],
+    education_en: ["LL.B"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-ngo-thi-hong.jpg",
+  },
+  {
+    slug: "nguyen-thi-huong",
+    name: "Nguyễn Thị Hường",
+    name_en: "Huong Thi Nguyen",
+    category: "Associate",
+    title: "Trưởng phòng Nhân sự",
+    title_en: "HR Manager",
+    office: "Hanoi",
+    email: "huongnt@bdlaw.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-nguyen-thi-huong.pdf",
+    practices: ["Contract Law", "Legal Research"],
+    bio: "Bà Hường chuyên trách nghiên cứu pháp lý và hỗ trợ rà soát hợp đồng.",
+    bio_en: "Ms. Huong specializes in legal research and contract review support.",
+    education: ["Cử nhân Nhân sự"],
+    education_en: ["Bachelor of Human Resources"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-nguyen-thi-huong.jpg",
+  },
+  {
+    slug: "dinh-nguyen-phuong-thao",
+    name: "Đinh Nguyễn Phương Thảo",
+    name_en: "Thao Nguyen Phuong Dinh",
+    category: "Associate",
+    title: "Cộng sự Tư vấn",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "thaodnp@bdlaw.vn", // 
+    phone: "+84 24 39365956", // // 
+    pdfUrl: "/documents/people/bdlaw-dinh-nguyen-phuong-thao.pdf",
+    practices: ["Investment Licensing", "Business Support"],
+    bio: "Bà Thảo hỗ trợ khách hàng thực hiện các thủ tục cấp phép đầu tư.",
+    bio_en: "Ms. Thao assists clients with investment licensing procedures.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-dinh-nguyen-phuong-thao.jpg",
+  },
+  {
+    slug: "do-thi-hong-hanh",
+    name: "Đỗ Thị Hồng Hạnh",
+    name_en: "Hanh Hong Thi Do",
+    category: "Associate",
+    title: "Cộng sự Tư vấn",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "hanhdth@xyz.com.vn", // 
+    phone: "+84 24 39365956", // // 
+    pdfUrl: "/documents/people/bdlaw-do-thi-hong-hanh.pdf",
+    practices: ["Commercial Contracts", "Corporate Governance"],
+    bio: "Bà  Hạnh hỗ trợ tư vấn và soạn thảo các văn bản pháp lý doanh nghiệp.",
+    bio_en: "Ms. Hanh assists in legal drafting and corporate advisory.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-do-thi-hong-hanh.png",
+  },
+  {
+    slug: "tran-minh-ngoc",
+    name: "Trần Minh Ngọc",
+    name_en: "Ngoc Minh Tran",
+    category: "Associate",
+    title: "Cộng sự Tư vấn",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "ngoctm@xyz.com.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-tran-minh-ngoc.pdf",
+    practices: ["Commercial Contracts", "Corporate Governance"],
+    bio: "Bà Trần Minh Ngọc chuyên trách tư vấn và soạn thảo các văn bản pháp lý doanh nghiệp.",
+    bio_en: "Ms. Ngoc specializes in legal drafting and corporate advisory.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-tran-minh-ngoc.jpg",
+  },
+  {
+    slug: "nguyen-minh-chau",
+    name: "Nguyễn Minh Châu",
+    name_en: "Chau Minh Nguyen",
+    category: "Associate",
+    title: "Cộng sự Tư vấn",
+    title_en: "Associate",
+    office: "Hanoi",
+    email: "minhchau@bdlaw.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-nguyen-minh-chau.pdf",
+    practices: ["Civil Litigation", "Dispute Resolution"],
+    bio: "Ông Nguyễn Minh Châu có kinh nghiệm trong việc hỗ trợ giải quyết các tranh chấp dân sự phức tạp.",
+    bio_en: "Mr. Chau Minh Nguyen has experience in supporting complex civil dispute resolutions.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc Dân"],
+    education_en: ["LL.B, National Economic University"],
+    admissions: [""],
+    admissions_en: [""],
+    image: "images/avt-nguyen-minh-chau.jpg",
+  },
+  {
+    slug: "nguyen-thu-trang",
+    name: "Nguyễn Thu Trang",
+    name_en: "Trang Thu Nguyen",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "trangnt@bdlaw.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-nguyen-thu-trang.pdf",
+    practices: ["Administrative Law", "Corporate Services"],
+    bio: "Bà Nguyễn Thu Trang chuyên trách các dịch vụ pháp lý hành chính cho doanh nghiệp.",
+    bio_en: "Ms. Trang Thu Nguyen is in charge of administrative legal services for businesses.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội"],
+    education_en: ["LL.B, Hanoi Law University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-nguyen-thu-trang.jpg",
+  },
+  {
+    slug: "bui-ha-thu",
+    name: "Bùi Hà Thu",
+    name_en: "Thu Ha Bui",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "thubh@bdlaw.vn", // 
+    phone: "+84 24 39365956", //  
+    pdfUrl: "/documents/people/bdlaw-bui-ha-thu.pdf",
+    practices: ["Contract Law", "Legal Research"],
+    bio: "Bà Bùi Hà Thu chuyên trách nghiên cứu pháp lý và hỗ trợ rà soát hợp đồng.",
+    bio_en: "Ms. Thu Ha Bui specializes in legal research and contract review support.",
+    education: ["Cử nhân Luật, Đại học Luật Hà Nội"],
+    education_en: ["LL.B, Hanoi Law University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-bui-ha-thu.jpg",
+  },
+  {
+    slug: "nguyen-thi-nguyet-thanh",
+    name: "Nguyễn Thị Nguyệt Thanh",
+    name_en: "Thanh Nguyet Thi Nguyen",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "thanhntn@bdlaw.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-nguyen-thi-nguyet-thanh.pdf",
+    practices: ["Administrative Procedures", "Investment Licensing", "Corporate Services"],
+    bio: "Bà Nguyễn T. Nguyệt Thanh chuyên trách hỗ trợ khách hàng trong các thủ tục hành chính và dịch vụ doanh nghiệp.",
+    bio_en: "Ms. Thanh Thi Nguyet Nguyen specializes in assisting clients with administrative procedures and corporate services.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-nguyen-thi-nguyet-thanh.jpg",
+  },
+  {
+    slug: "pham-tuan-linh",
+    name: "Phạm Tuấn Linh",
+    name_en: "Linh Tuan Pham",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "linhpt@bdlaw.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-pham-tuan-linh.pdf",
+    practices: ["Court Representation", "Legal Advocacy"],
+    bio: "Ông Phạm Tuấn Linh tham gia hỗ trợ các thủ tục tố tụng và đại diện ngoài tòa án.",
+    bio_en: "Mr. Linh Tuan Pham assists in procedural matters and out-of-court representation.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [],
+    admissions_en: [],
+    image: "images/avt-pham-tuan-linh.jpg",
+  },
+  {
+    slug: "phung-thi-linh",
+    name: "Phùng Thị Linh",
+    name_en: "Linh Thi Phung",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "linhpt@xyz.com.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-phung-thi-linh.pdf",
+    practices: ["Administrative Procedures", "Investment Registration"],
+    bio: "Bà Phùng Thị Linh chuyên trách hỗ trợ khách hàng trong các thủ tục hành chính và đăng ký đầu tư.",
+    bio_en: "Ms. Linh Thi Phung specializes in supporting clients in administrative procedures and investment registration.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [""],
+    admissions_en: [""],
+    image: "images/avt-phung-thi-linh.jpg",
+  },
+  {
+    slug: "nguyen-vu-thuy-dung",
+    name: "Nguyễn Vũ Thùy Dung",
+    name_en: "Dung Thuy Vu Nguyen",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "dungntv@xyz.com.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-nguyen-vu-thuy-dung.pdf",
+    practices: ["Administrative Procedures", "Investment Registration"],
+    bio: "Bà Dung chuyên trách hỗ trợ khách hàng trong các thủ tục hành chính và đăng ký đầu tư.",
+    bio_en: "Ms. Dung specializes in supporting clients in administrative procedures and investment registration.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [""],
+    admissions_en: [""],
+    image: "images/avt-nguyen-vu-thuy-dung.jpg",
+  },
+  {
+    slug: "le-thi-thuy-linh",
+    name: "Lê Thị Thùy Linh",
+    name_en: "Linh Thuy Thi Le",
+    category: "Paralegal",
+    title: "Chuyên viên Pháp lý",
+    title_en: "Paralegal",
+    office: "Hanoi",
+    email: "linhltth@xyz.com.vn", // 
+    phone: "+84 24 39365956", // 
+    pdfUrl: "/documents/people/bdlaw-le-thi-thuy-linh.pdf",
+    practices_en: ["Administrative Procedures", "Investment Registration"],
+    bio: "Bà Thùy Linh chuyên trách hỗ trợ khách hàng trong các thủ tục hành chính và đăng ký đầu tư.",
+    bio_en: "Ms. Thuy Linh specializes in supporting clients in administrative procedures and investment registration.",
+    education: ["Cử nhân Luật, Đại học Kinh tế Quốc dân"],
+    education_en: ["LL.B, National Economics University"],
+    admissions: [""],
+    admissions_en: [""],
+    image: "images/avt-le-thi-thuy-linh.jpg",
+  },
+
+];
+
+export function getName(p: Professional, lang: string) {
+  return lang === "vi" ? p.name : p.name_en;
+}
+
+export function getTitle(p: Professional, lang: string) {
+  return lang === "vi" ? p.title : p.title_en;
+}
+
+export function getBio(p: Professional, lang: string) {
+  return lang === "vi" ? p.bio : p.bio_en;
+}
